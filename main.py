@@ -2,7 +2,7 @@ from problem import CityMapProblem
 from algorithms.bfs import bfs
 from algorithms.dfs import dfs
 from algorithms.ucs import ucs
-#from algorithms.ids import ids
+from algorithms.ids import ids
 # from algorithms.astar import astar
 
 # 7000 cities -> 7000 states (project needs 1K-10K states).
@@ -17,6 +17,7 @@ algorithms = {
     "BFS": bfs,
     "DFS": dfs,
     "UCS": ucs,
+    "IDS": ids,
 }
 
 results = {name: run(problem) for name, run in algorithms.items()}
